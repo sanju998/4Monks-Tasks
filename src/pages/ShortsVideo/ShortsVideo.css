@@ -1,0 +1,33 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+ 
+}
+
+.app_videos {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  
+}
+
+.app_videos::-webkit-scrollbar {
+  display: none;
+}
+
+/* for IE Safari*/
+.app_videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media screen and (max-width: 400px) {
+  .app_videos {
+
+    height: 100vh !important  ;
+   
+  }
+}

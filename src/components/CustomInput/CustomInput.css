@@ -1,0 +1,45 @@
+input {
+    background: #FAFAFA;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    font-size: 12.9px;
+    height: 48px;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    font-size: 12.9px;
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: .3s;
+   
+}
+
+.form-card input:focus {
+    outline: none;
+    border: 1px solid #454545;
+
+}
+
+.filled{
+    top: 0%;
+    font-size: 11px;
+    padding: 0 4px;
+    background-color: #fff;
+    left: -4px;
+}
+.eye {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 2%;
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+
+
+
+}

@@ -1,0 +1,18 @@
+.form-card {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    height: 77vh
+}
+
+.form-card button {
+    color: #666666;
+    text-decoration: none;
+    background: #25A0DA;
+    border-radius: 8px;
+    color: #FAFAFA;
+    border: none;
+    height: 48px;
+
+}
+
