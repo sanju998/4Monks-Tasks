@@ -13,7 +13,7 @@ function CustomInput(props) {
   }
 
   const togglePassword = () => {
-    if (passwordType == "password") {
+    if (passwordType === "password") {
       setPasswordType("text");
       return;
     }
@@ -33,7 +33,7 @@ function CustomInput(props) {
         />
         <label className={value && "filled"}>{props.label}</label>
       {
-        props.type=="password"?     <span onClick={togglePassword} className="eye">
+        props.type==="password"?     <span onClick={togglePassword} className="eye">
         {passwordType === "password" ? (
           <AiOutlineEyeInvisible style={{cursor:"pointer"}} />
         ) : (

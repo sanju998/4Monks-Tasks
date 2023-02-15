@@ -1,5 +1,5 @@
 import "./ShortsVideo.css";
-import React, { useRef, useState } from "react";
+import React from "react";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import { VideosData } from "../../utils/VideosData";
 

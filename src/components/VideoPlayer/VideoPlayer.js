@@ -13,7 +13,6 @@ import Slider from "react-slick";
 function VideoPlayer(props) {
   const videoRef = useRef();
   const [progress, setProgress] = useState(0);
-  const [videoTime, setVideoTime] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [follow, setFollow] = useState(true);
@@ -140,8 +139,6 @@ export default VideoPlayer;
 
 function Carousel(props) {
 
-  const [sliderData, setsliderData] = useState(props.sliderData)
-
   const settings = {
     dots: false,
     arrows: false,
@@ -153,7 +150,7 @@ function Carousel(props) {
   return (
     <>
       <Slider {...settings}>
-        {sliderData.map((item) => (
+        {props.sliderData.map((item) => (
 
           <div className="slide-box d-flex ">
             <div>
